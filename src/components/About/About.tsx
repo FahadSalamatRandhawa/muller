@@ -75,8 +75,8 @@ export function History({blok}:{blok:any}){
                 <div className=" flex flex-col gap-[20px] lg:gap-0 lg:flex-row lg:justify-between">
                     {
                         isInView&&
-                        <AnimateFromLeftComponent className="  lg:w-[50%] flex flex-col gap-[10px] md:gap-[20px] lg:gap-[32px] xl:gap-[50px]">
-                            <div >
+                        <AnimateFromLeftComponent className="  lg:w-[50%] ">
+                            <div  className=" flex flex-col gap-[10px] md:gap-[20px] lg:gap-[32px] xl:gap-[50px]">
                                 <h2 className=" ">{blok.heading}</h2>
                                 <Pagelink url={link[0].url.url} text={link[0].Lable} variant={colors[0].link_variant} />
                             </div>
@@ -110,7 +110,7 @@ export function History({blok}:{blok:any}){
 
 import MediaRenderer  from "../MediaComponent"
 import {  handleMissingColors } from "@/utils";
-import { AnimateFromBelowComponent, AnimateFromLeftComponent, AnimateFromRightComponent, AppearFromBelow } from "@/AnimationUtils";
+import { AnimateFromBelowComponent, AnimateFromLeftComponent, AnimateFromRightComponent, AnimateMultipleFromBelow, AppearFromBelow } from "@/AnimationUtils";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
@@ -130,13 +130,11 @@ export function Achievements({blok}:{blok:any}){
                 <div className=" grid grid-cols-1 md:grid-cols-2 gap-[50px] lg:gap-[177px] mt-[20px] justify-between">
                     {
                         isInView&&
-                        <AnimateFromBelowComponent className=" flex flex-col gap-[35px] mt-[30px] md:mt-[70px] lg:mt-[150px]">
-                            <div >
+                        <AnimateMultipleFromBelow className=" flex flex-col gap-[35px] mt-[30px] md:mt-[70px] lg:mt-[150px]">
                                 <h2 className=" ">{blok.heading}</h2>
                                 <text className=" mx-h-[235px] overflow-hidden mb-[10px]">{blok.overview}</text>
                                 <Pagelink text={blok.link.Lable} url={blok.link.url} variant={colors[0].link_variant} />
-                            </div>
-                        </AnimateFromBelowComponent>
+                        </AnimateMultipleFromBelow>
                     }
                     <div className=" relative w-full flex items-center min-h-[400px] ">
                         {
