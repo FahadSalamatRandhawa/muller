@@ -5,7 +5,7 @@ export default function Home({blok}:{blok:any}){
 
   return(
     <>
-      <RevealAnimationComponent />
+{/**      <RevealAnimationComponent /> */}
       {
         blok.block.map((b:any)=>(
           <StoryblokComponent blok={b} key={b._uid} />
