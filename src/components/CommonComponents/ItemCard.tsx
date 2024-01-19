@@ -21,7 +21,7 @@ export default function ItemsCard({blok,buttontext,link_variant,divider_color,is
         <Skeleton isLoaded={!isLoading} fitContent={true}  > 
         <div className=' flex flex-col w-full md:w-[90%] 1400px:w-[95%] lg:w-[85%] xl:w-[900px] min-h-[400px] md:min-h-[600px] lg:h-[936px] xl:h-auto justify-stretch gap-[20px] py-[18px] xl:py-[30px]' key={blok.uuid} >
           
-          </div>
+        </div>
       </Skeleton>
       <Skeleton isLoaded={!isLoading} fitContent={true}  > 
         <div className=' flex flex-col w-full md:w-[90%] 1400px:w-[95%] lg:w-[85%] xl:w-[900px] min-h-[400px] md:min-h-[600px] lg:h-[936px] xl:h-auto justify-stretch gap-[20px] py-[18px] xl:py-[30px]' key={blok.uuid} >

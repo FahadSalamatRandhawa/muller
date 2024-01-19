@@ -64,7 +64,7 @@ export default function Projects({blok}:{blok:any}){
                                             </div>
                                         </div>
                                         <div className=" flex flex-col justify-between gap-[10px]  text-start">
-                                        <div className={` overflow-ellipsis text-start transition-all animate-out ease-in-out duration-1000 md:${max_words=md} lg:${max_words=lg} xl:${max_words=xl}`}>{isExpanded?project.overview:(project.overview).slice(0,max_words)}</div>
+                                        <p className={` overflow-ellipsis text-start transition-all animate-out ease-in-out duration-1000 md:${max_words=md} lg:${max_words=lg} xl:${max_words=xl}`}>{isExpanded?project.overview:(project.overview).slice(0,max_words)}</p>
                                         {
                                             (project.overview.length)>max_words+1?
                                             <button onClick={()=>setIsExpanded(!isExpanded)} style={{backgroundColor:blok.button_color}} >{!isExpanded?"Read more ...":"Read less ..."}</button>

@@ -10,7 +10,7 @@ export default function Footer({blok}:{blok:any}){
     const {text_color}=blok;
     const {border_color}=blok;
     const {background_color}=blok;
-    //console.log(blok)
+
     return (
         <div className=" flex flex-col px-[10px] md:px-[30px] lg:px-[64px] py-[20px] md:py-[40px] lg:py-[80px] gap-y-[20px] md:gap-y-[40px] lg:gap-y-[80px] font-[500] text-[14px] font-['DM_Mono']" style={{backgroundColor:background_color,color:text_color}} {...storyblokEditable(blok)}>
             <div className=" flex flex-col md:flex-row justify-between ">
@@ -31,7 +31,7 @@ export default function Footer({blok}:{blok:any}){
                     }
                 </div>
             </div>
-            <div className=" flex flex-col md:flex-row justify-between border-t-[1px] pt-[32px] gap-[20px] md:gap-0" style={{borderColor:border_color}}>
+            <div className=" flex flex-col md:flex-row justify-between border-t-[1px] pt-[32px] gap-[20px] md:gap-0" style={{borderColor:border_color}} >
                 <div className=" flex flex-wrap gap-x-[24px] gap-y-[15px] lg:gap-x-[30px]">
                     {
                         blok.corporate_links.map((link:any)=>(
