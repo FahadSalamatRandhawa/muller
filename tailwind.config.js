@@ -15,6 +15,7 @@ module.exports = {
         'sm':'400px',
         'md':'800px',
         'lg':'1180px',
+        '1400px':'1400px',
         'xl':'1890px',
       },
       animation: {

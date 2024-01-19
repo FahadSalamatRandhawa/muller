@@ -34,7 +34,7 @@ export function Organization({blok}:{blok:any}){
     const {jobrole_text_color}=blok;
 
     return(
-        <div ref={ref} className=" min-h-screen flex flex-col pl-[20px] pr-[10px] py-[20px] lg:pl-[76px] lg:pr-[49px] lg:py-[35px] " style={{backgroundColor:colors[0].background_color,color:colors[0].text_color}} id={blok.anchor_id} {...storyblokEditable(blok)}>
+        <div ref={ref} className=" min-h-screen flex flex-col pl-[20px] pr-[10px] py-[20px] lg:pl-[76px] lg:pr-[49px] lg:py-[35px] overflow-x-hidden " style={{backgroundColor:colors[0].background_color,color:colors[0].text_color}} id={blok.anchor_id} {...storyblokEditable(blok)}>
                 {
                     isInView&&
                     <AnimateFromBelowComponent className="">
@@ -59,10 +59,10 @@ export function Organization({blok}:{blok:any}){
                                         <DialogTrigger>
                                             {dep.department_head.map((head:any)=>(<EmployeeCard employee={head} jobrole_color={jobrole_text_color} />))}
                                         </DialogTrigger>
-                                        <DialogContent className=" overflow-auto max-h-screen max-w-[95%] flex flex-wrap justify-evenly md:grid md:grid-cols-3 lg:grid-cols-6 gap-[5px] hide-scroll " style={{backgroundColor:blok.popup_background_color,color:colors[0].text_color}}>
+                                        <DialogContent className=" overflow-auto max-h-screen max-w-[95%] flex flex-wrap justify-evenly md:grid md:grid-cols-3 gap-[5px] hide-scroll " style={{backgroundColor:blok.popup_background_color,color:colors[0].text_color}}>
                                             {
                                                 dep.employees.map((emp:any,index:number)=>(
-                                                    <EmployeeCard employee={emp} jobrole_color={jobrole_text_color} className={index<3?" lg:col-span-2":""}  />
+                                                    <EmployeeCard employee={emp} jobrole_color={jobrole_text_color}  />
                                                 ))
                                             }
                                         </DialogContent>
