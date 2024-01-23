@@ -51,10 +51,10 @@ export function Organization({blok}:{blok:any}){
                     }
                 </div>
                 <div className=" min-h-[300px] pt-10 lg:pt-[100px] lg:min-h-[570px] flex flex-wrap justify-evenly md:justify-normal ">
-                    <div className=" flex flex-wrap gap-[5px] md:gap-[10px] justify-center ">
+                    <div className=" w-full flex flex-wrap md:grid md:grid-cols-3 gap-[5px] md:gap-[10px] justify-center ">
                         {
                             isInView&&departments.map((dep:any,index:number)=>(
-                                    <AnimateFromFarRightComponent className="">
+                                    <AnimateFromFarRightComponent className="" key={index}>
                                         <Dialog>
                                         <DialogTrigger>
                                             {dep.department_head.map((head:any)=>(<EmployeeCard employee={head} jobrole_color={jobrole_text_color} />))}
@@ -90,7 +90,7 @@ export function Organization({blok}:{blok:any}){
 const EmployeeCard=({employee,jobrole_color,className}:{employee:any,jobrole_color:string,className?:string})=>{
     const emp=employee;
     return(
-        <div className={`sm:w-[250px] md:max-w-[250px] min-h-[300px] flex flex-col items-center gap-[24px] `+className} key={emp._uid}>
+        <div className={`w-[300px] md:max-w-[250px] min-h-[300px] flex flex-col items-center gap-[24px] `+className} key={emp._uid}>
             <Image src={emp.profileimage.filename} width={150} height={150} alt={emp.profileimage.alt} className=" justify-self-center" />
             <div className=" flex flex-col text-center font-[Roboto]">
                 <text className=" text-[20px] leading-[30px] font-[600]">{emp.name}</text>
