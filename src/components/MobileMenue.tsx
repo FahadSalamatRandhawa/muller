@@ -38,7 +38,7 @@ export function MobileMenue({blok}:{blok:any}){
     const {background_color}=blok;
     const {text_color}=blok;
 
-    return <div className={`w-full sticky flex justify-between z-50 top-0 h-[40px] lg:invisible lg:hidden `} style={{backgroundColor:mobile_state?background_color:""}} {...storyblokEditable(blok)}>
+    return <div className={`w-full sticky flex justify-between items-center z-50 top-0 h-[40px] lg:invisible lg:hidden `} style={{backgroundColor:mobile_state?background_color:""}} {...storyblokEditable(blok)}>
             <Link href={blok.logo_link.cached_url=="home"?"/":blok.logo_link.url}><Image className=" drop-shadow-2xl z-40" height={35} width={166} src={mobile_state?blok.mobile_menue_open_logo.filename:blok.logo.filename} alt={blok.logo.alt} /></Link>
             <div className={` flex flex-row-reverse items-center gap-[10px] md:gap-[20px]  px-[20px] rounded-bl-[8px] `} style={{backgroundColor:background_color}}>
             {
@@ -51,10 +51,10 @@ export function MobileMenue({blok}:{blok:any}){
                 <Button className=" flex flex-col gap-[6px] items-end text-white ">{mobile_state?<RxCross1/>:<><hr className=" w-[35px]"/><hr className=" w-[20px]"/></>}</Button>
             </PopoverTrigger>
             <PopoverContent className=" w-screen min-h-screen flex flex-col text-center -mt-2 border-0 bg-cover" style={{backgroundColor:background_color,color:text_color}}>
-            <Accordion className=" flex flex-col gap-[10px] text-center " allowToggle>
+            <Accordion className=" flex flex-col gap-[10px] text-center "  borderColor={background_color} allowToggle>
             {
                 blok.name.map((n:any,index:number)=>(
-                    <AccordionItem className=" w-full flex flex-col justify-evenly min-h-[37px] " key={n._uid}>
+                    <AccordionItem className=" w-full flex flex-col justify-evenly min-h-[37px] " borderWidth={0} key={n._uid}>
                         <div className=" grid grid-cols-2 items-center justify-center pr-[5%] ">
                         {
                             n.items.length>0?
@@ -63,12 +63,12 @@ export function MobileMenue({blok}:{blok:any}){
                                 </AccordionButton>
                                 :<div className=" w-full invisible"><IoIosArrowDown/></div>
                         }
-                        <Link onClick={()=>(dispatch(menue_close()))} href={n.link.cached_url=="home"?"/":"/"+capitalizeFirstLetter(n.link.cached_url)} className=" justify-self-start ">{n.lable}</Link>
+                        <Link onClick={()=>(dispatch(menue_close()))} href={n.link.cached_url=="home"?"/":"/"+capitalizeFirstLetter(n.link.cached_url)} className=" min-h-[30px] justify-self-start ">{n.lable}</Link>
                         </div>
                         <AccordionPanel className=" flex flex-col w-full ">
                         {
                             n.items.map((item:any)=>(
-                                <div className="grid grid-cols-2 w-full  border-b border-white pr-[5%]" key={item._uid}>
+                                <div className="grid grid-cols-2 w-full  pr-[5%]" key={item._uid}>
                                     <div className=" w-full"></div>
                                 <Link onClick={()=>(dispatch(menue_close()))} href={item.url.linktype=="story"?"/"+item.url.cached_url:"/"+capitalizeFirstLetter(n.link.cached_url.split("/")[0])+item.url.url} className=" text-start justify-self-start py-[8px] " key={item._uid}>{item.Lable}</Link>
                                 </div>

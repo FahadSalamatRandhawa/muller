@@ -16,9 +16,7 @@ export default function Benefits({blok}:{blok:any}){
     let {colors}=blok;
     colors=handleMissingColors(colors)
     let {link}=blok;
-    if(!link){
-        link=[{}]
-    }
+    
     return (
         <div ref={ref} className=" flex flex-col min-h-screen py-[50px]  lg:py-[112px] px-[10px] md:px-[64px] gap-[20px] md:gap-[40px] lg:gap-[72px]" style={{backgroundColor:colors[0].background_color,color:colors[0].text_color}} id={blok.anchor_id} {...storyblokEditable(blok)}>
             {
@@ -52,7 +50,11 @@ export default function Benefits({blok}:{blok:any}){
             {
                 isInView&&
                 <AnimateFromBelowComponent className="flex justify-end">
-                    <div className="flex w-full max-w-[300px]" ><Pagelink text={link[0].Lable} url={link[0].url?link[0].url.url:""} variant={colors[0].link_variant} /></div>
+                    <div className="flex w-full max-w-[300px]" >{
+                        link.map((l:any)=>(
+                            <Pagelink text={l.Lable} url={l.url} variant={colors[0].link_variant} />
+                        ))
+                    }</div>
                 </AnimateFromBelowComponent>
             }
         </div>
