@@ -18,13 +18,10 @@ export default function MarketPoints({blok}:{blok:any}){
                         <div className=" flex flex-col  gap-[24px]" key={point._uid}>
                             {
                                 isInView&&
-                                <AnimateFromFarRightComponent className="">
-                                    <Image src={blok.icon.filename} width={100} height={100} objectFit="cover" alt={blok.icon.alt} />
-                                </AnimateFromFarRightComponent>
-                            }
-                            {
-                                isInView&&
                                 <>
+                                    <AnimateFromFarRightComponent className="">
+                                        <Image src={point.image.filename} width={100} height={100} objectFit="cover" alt={point.image.alt} />
+                                    </AnimateFromFarRightComponent>
                                     <AnimateFromBelowComponent className="">
                                         <h4 className="  ">{point.heading}</h4>
                                     </AnimateFromBelowComponent>
