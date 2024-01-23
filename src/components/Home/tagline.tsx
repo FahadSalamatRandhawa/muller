@@ -12,19 +12,19 @@ export default function Tagline({blok}:{blok:any}){
     const ref=useRef(null)
     const isInView=useInView(ref,{once:true,margin:"-1px"})
 
-    const [value,setValue]=useState(0);
-    const [current,setCurrent]=useState(0)
-    const locations=blok.locations[0].locationlist
+    // const [value,setValue]=useState(0);
+    // const [current,setCurrent]=useState(0)
+     const {locations}=blok
     let {colors}=blok;
     colors=handleMissingColors(colors)
 
-    function handleLocationChange(index:number){
-        setValue(index);
-        setCurrent(0)
-    }
+    // function handleLocationChange(index:number){
+    //     setValue(index);
+    //     setCurrent(0)
+    // }
 
     return(
-        <div ref={ref} className=" overflow-hidden min-h-screen lg:h-auto flex flex-col justify-center md:px-[64px] gap-[80px] " style={{backgroundColor:colors[0].background_color,color:colors[0].text_color}} id={blok.anchor_id} {...storyblokEditable(blok)}>
+        <div ref={ref} className=" overflow-hidden min-h-screen lg:h-auto flex flex-col justify-center md:px-[64px] px-[30px] py-[40px] gap-[80px] " style={{backgroundColor:colors[0].background_color,color:colors[0].text_color}} id={blok.anchor_id} {...storyblokEditable(blok)}>
             {
                 isInView&&
                 <motion.div variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className=" grid grid-cols-1 px-[10px] md:px-0">
@@ -33,28 +33,35 @@ export default function Tagline({blok}:{blok:any}){
                 <p>{blok.tagline}</p>
                 </motion.div>
             }
-            <div className=" flex flex-col md:flex-row gap-10 lg:gap-0  md:justify-between ">
-                <div className="h-auto max-w-[400px] flex flex-col gap-[29px] px-[20px] ">
+            <div className=" flex flex-col md:grid md:grid-cols-2 gap-10 lg:gap-3  md:justify-between">
+                
                     {locations&&locations.map((l:any,i:number)=>(
-                        <button onClick={()=>handleLocationChange(i)} key={l._uid} className={` flex flex-col text-start`} >
-                            <div className=" flex gap-[10px] md:gap-[27px]">
-                                {value==i&&isInView?<motion.div className=" h-full w-[1px]" variants={AppearFromAbove} initial={AppearFromAbove.start} animate={AppearFromAbove.finish} transition={transition} style={{backgroundColor:colors[0].border_color}}></motion.div>:<div></div>}
+                        <div className=" flex flex-col gap-5 justify-between ">
+                            <div key={l._uid} className={` flex flex-col text-start`} >
+                            <div className=" flex">
                                 {
                                     isInView&&
-                                    <motion.div variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className=" grid grid-cols-1">
+                                    <motion.div variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className=" grid grid-cols-1 pl-[10px] md:pl-[27px]" style={{borderLeft:`1px solid ${l.border_color}`}} >
                                         <text className=" heading3">{l.country}</text>
                                         <text className=" lg:leading-[33.6px] mt-[16px] mb-[24px]">{l.location}</text>
                                         <Link href={l.link}><text className=" font-['DM_Mono'] font-[500] text-[18px]">{l.linktext}</text></Link>
                                     </motion.div>
                                 }
                             </div>
-                        </button>
+                            </div>
+                            <div className=" flex flex-col gap-4">
+                            {
+                                l.image.map((image:any)=>(
+                                    <AnimateXAxisComponent key={image._uid} X={400} className=" self-center h-[250px] lg:h-[440px] relative w-[80%] lg:w-[542px] md:h-[300px]">
+                                        <Image src={image.filename} fill objectFit="cover" sizes="(min-width: 800px) 542px" alt={image.alt} />
+                                    </AnimateXAxisComponent>
+                                ))
+                            }
+                            </div>
+                        </div>
                     ))}
-                </div>
-                {isInView&&
-                <AnimateXAxisComponent key={value} X={400} className=" h-[300px] relative md:w-[542px] md:h-[440px]">
-                    <Image src={locations[value].image[current]&&locations[value].image[current].filename} fill objectFit="contain" sizes="(min-width: 800px) 542px" alt={locations[value].image[current].alt} onMouseOver={()=>setCurrent((current+1)%locations[value].image.length)} />
-                </AnimateXAxisComponent>}
+                
+
             </div>
         </div>
     )
