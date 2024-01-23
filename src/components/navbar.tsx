@@ -31,7 +31,7 @@ export async function Navigation({blok}:{blok:any}){
     const {text_color}=blok;
     return(
         <>
-        <div className=" sticky invisible hidden lg:visible w-full h-[50px] lg:flex items-center justify-between mt top-0 z-40 pl-3" style={{color:text_color}} {...storyblokEditable(blok)}>
+        <div className=" sticky invisible hidden lg:visible w-full h-[50px] lg:flex items-center justify-between top-0 z-40 pl-3" style={{color:text_color}} {...storyblokEditable(blok)}>
             <Link href={blok.logo_link.cached_url=="home"?"/":blok.logo_link.url}><Image height={35} width={166} src={blok.logo.filename} alt={blok.logo.alt} /></Link>
             <div className="  flex justify-end items-center w-auto px-[20px] py-[15px] text-[21px] font-[400] rounded-bl-[8px] gap-[20px]" style={{backgroundColor:background_color}}>
             {

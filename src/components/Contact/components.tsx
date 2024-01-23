@@ -15,6 +15,8 @@ export function ContactTopGrid({blok}:{blok:any}){
     const link=blok.link[0]
     let {colors}=blok;
     colors=handleMissingColors(colors)
+    const {space_between_images}=blok;
+    const {space_between_slider}=blok;
 
     return(
         <div ref={ref} className=" min-h-screen md:h-screen flex flex-col md:flex-row items-center justify-between gap-[20px] px-[10px] md:px-[64px] py-[40px] " style={{backgroundColor:colors[0].background_color,color:colors[0].text_color}} id={blok.anchor_id} {...storyblokEditable(blok)}>
@@ -26,9 +28,9 @@ export function ContactTopGrid({blok}:{blok:any}){
                         <Pagelink url={link.url.url} text={link.Lable} variant={colors[0].link_variant} />
                     </AnimateFromBelowComponent>
                 }
-                <div className="grid h-screen w-full md:w-auto grid-cols-2 overflow-auto pointer-events-none ">
-                    <div className=" md:h-screen flex flex-col  w-full overflow-auto gap-[0] hide-scroll ">
-                        <div className=" flex flex-col gap-[0] animate-upward">
+                <div className="grid h-screen w-full md:w-auto grid-cols-2 overflow-auto pointer-events-none " style={{gap:space_between_slider+"px"}} >
+                    <div className=" md:h-screen flex flex-col w-full overflow-auto hide-scroll ">
+                        <div className=" flex flex-col animate-upward" style={{gap:space_between_images+"px"}} >
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
@@ -39,7 +41,7 @@ export function ContactTopGrid({blok}:{blok:any}){
                         ))
                         }
                         </div>
-                        <div className=" flex flex-col gap-[0] animate-upward">
+                        <div className=" flex flex-col animate-upward" style={{gap:space_between_images+"px"}}>
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative  snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
@@ -50,8 +52,8 @@ export function ContactTopGrid({blok}:{blok:any}){
                         </div>
                     </div>
                     
-                    <div className=" h-screen flex flex-col  w-full overflow-auto gap-[0] hide-scroll ">
-                        <div className=" flex flex-col gap-[0] animate-downward">
+                    <div className=" h-screen flex flex-col w-full overflow-auto hide-scroll " style={{gap:space_between_slider+"px"}}>
+                        <div className=" flex flex-col animate-downward" style={{gap:space_between_images+"px"}}>
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
@@ -60,7 +62,7 @@ export function ContactTopGrid({blok}:{blok:any}){
                         ))
                         }
                         </div>
-                        <div className=" flex flex-col gap-[0] animate-downward">
+                        <div className=" flex flex-col animate-downward" style={{gap:space_between_images+"px"}}>
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative  snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
