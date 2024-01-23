@@ -44,7 +44,7 @@ export function Organization({blok}:{blok:any}){
                 <div className=" grid grid-cols-1 self-center md:self-start justify-center md:justify-normal md:grid-cols-3 lg:grid-cols-4 gap-[10px] md:gap-[24px] mt-[40px] lg:mt-[108px]">
                     {
                         isInView&&countries.map((country:any,index:number)=>(
-                            <motion.button variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className={` min-w-[270px] md:max-w-[300px] px-[34px] border-b-[1px] pb-[10px]`} style={{borderBottomColor:index==value?colors[0].border_color:'',color:index==value?colors[0].border_color:''}} key={country._uid} onClick={()=>setValue(index)} >
+                            <motion.button variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className={` min-w-[270px] md:max-w-[300px] px-[34px] border-b-[1px] pb-[10px] font-Helvectica `} style={{borderBottomColor:index==value?colors[0].border_color:'',color:index==value?colors[0].border_color:''}} key={country._uid} onClick={()=>setValue(index)} >
                                 {country.countryname}
                             </motion.button>
                         ))
