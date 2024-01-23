@@ -9,6 +9,7 @@ import { AnimateFromBelowComponent, AnimateFromFarRightComponent, AnimateFromLef
 import {motion} from 'framer-motion'
 
 export default function Benefits({blok}:{blok:any}){
+    console.log(blok)
     const ref=useRef(null);
     const isInView=useInView(ref,{once:true})
     const benefits=blok.benefits
@@ -16,6 +17,9 @@ export default function Benefits({blok}:{blok:any}){
     let {colors}=blok;
     colors=handleMissingColors(colors)
     let {link}=blok;
+    if(!link){
+        link=[{Label:"More info",url:""}]
+    }
     
     return (
         <div ref={ref} className=" flex flex-col min-h-screen py-[50px]  lg:py-[112px] px-[10px] md:px-[64px] gap-[20px] md:gap-[40px] lg:gap-[72px]" style={{backgroundColor:colors[0].background_color,color:colors[0].text_color}} id={blok.anchor_id} {...storyblokEditable(blok)}>
