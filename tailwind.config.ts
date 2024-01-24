@@ -11,22 +11,7 @@ const config: Config = {
     '@/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily:{
-      'Helvectica':"Helvectica Neue",
-      'DM_Mono':"DM Mono"
-    },
-    fontSize:{
-      "Text-14":"14px"
-    },
-    colors:{
-      'brand':'#00918E',
-      'black':'#221E1F',
-      'grey-2':'#595657',
-      'B-Yellow':'#FBBA00',
-      'white':'#FAFBFF',
-      'B-grey':'#E7E9EA',
-      'Light-Grey':'#F4F4F4',
-    },
+    
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -41,6 +26,23 @@ const config: Config = {
           to: { width: "100%" },
         },
       },
+      fontFamily:{
+        'Helvectica':"Helvectica Neue",
+        'DM_Mono':"DM Mono",
+        sans: ['var(--font-helvetica-neue)'],
+      },
+      fontSize:{
+        "Text-14":"14px"
+      },
+      colors:{
+        'brand':'#00918E',
+        'black':'#221E1F',
+        'grey-2':'#595657',
+        'B-Yellow':'#FBBA00',
+        'white':'#FAFBFF',
+        'B-grey':'#E7E9EA',
+        'Light-Grey':'#F4F4F4',
+      }
     },
     screens:{
       'md':'700px',

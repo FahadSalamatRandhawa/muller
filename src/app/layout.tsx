@@ -19,6 +19,14 @@ const Roboto=localFont({
   display:'swap'
 })
 
+const HelveticaNeue=localFont({
+  src:[
+    {
+      path:"../../public/fonts/HelveticaNeue/HelveticaNeue-MediumExt.otf",
+      weight:'300'
+    }
+  ]
+})
 
 
 storyblokInit({
@@ -44,7 +52,7 @@ export default async function RootLayout({
     
       <html lang="en" >
         <StoryblokProvider>
-      <body className={Roboto.className+" -top-[40px] lg:-top-[50px] "}>
+      <body className={HelveticaNeue.className+" -top-[40px] lg:-top-[50px] "}>
         <Redux_Providers>
           <Providers>
             <StoryblokStory story={header.story} />

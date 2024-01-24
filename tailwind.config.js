@@ -27,14 +27,15 @@ module.exports = {
         },
       },
     
-    fontFamily:{
-      'Helvectica':"Helvectica Neue",
-      'DM_Mono':"DM Mono"
-    },
-    fontSize:{
-      "Text-14":"14px"
-    },
     extend: {
+      fontSize:{
+        "Text-14":"14px"
+      },
+      fontFamily:{
+        'Helvectica':"Helvectica Neue",
+        'DM_Mono':"DM Mono",
+        sans: ['var(--font-helvetica-neue)'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
