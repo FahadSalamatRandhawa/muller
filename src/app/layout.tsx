@@ -1,6 +1,7 @@
 //export const revalidate=true;
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+//import { Inter } from 'next/font/google'
+
+import localFont from 'next/font/local'
 import './globals.css'
 export const dynamic = 'force-dynamic'
 
@@ -11,7 +12,13 @@ import Redux_Providers from '@/components/Provider'
 import { RevealAnimationComponent } from '@/components/RevealAnimation';
 
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'] })
+
+const Roboto=localFont({
+  src:"../fonts/FromGoogle/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf",
+  display:'swap'
+})
+
 
 
 storyblokInit({
@@ -37,7 +44,7 @@ export default async function RootLayout({
     
       <html lang="en" >
         <StoryblokProvider>
-      <body className={inter.className+ " -top-[40px] lg:-top-[50px] "}>
+      <body className={Roboto.className+" -top-[40px] lg:-top-[50px] "}>
         <Redux_Providers>
           <Providers>
             <StoryblokStory story={header.story} />
