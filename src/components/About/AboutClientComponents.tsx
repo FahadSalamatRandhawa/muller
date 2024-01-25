@@ -51,18 +51,18 @@ export function Organization({blok}:{blok:any}){
                     }
                 </div>
                 <div className=" min-h-[300px] pt-10 lg:pt-[100px] lg:min-h-[570px] flex flex-wrap justify-evenly md:justify-normal ">
-                    <div className=" w-full flex flex-wrap md:grid md:grid-cols-3 gap-[5px] md:gap-[10px] justify-center ">
+                    <div className=" w-full flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 gap-[5px] md:gap-[10px]  justify-center ">
                         {
                             isInView&&departments.map((dep:any,index:number)=>(
-                                    <AnimateFromFarRightComponent className="" key={index}>
+                                    <AnimateFromFarRightComponent className="flex justify-center " key={index}>
                                         <Dialog>
-                                        <DialogTrigger>
-                                            {dep.department_head.map((head:any)=>(<EmployeeCard employee={head} jobrole_color={jobrole_text_color} />))}
+                                        <DialogTrigger >
+                                            {dep.department_head.map((head:any)=>(<EmployeeCard employee={head} jobrole_color={jobrole_text_color}  className="justify-self-center place-self-center"/>))}
                                         </DialogTrigger>
-                                        <DialogContent className=" overflow-auto max-h-screen max-w-[95%] flex flex-wrap justify-evenly md:grid md:grid-cols-3 gap-[5px] hide-scroll " style={{backgroundColor:blok.popup_background_color,color:colors[0].text_color}}>
+                                        <DialogContent className=" overflow-auto max-h-screen max-w-[95%] flex flex-wrap justify-evenly md:grid md:grid-cols-2 lg:grid-cols-3 gap-[5px] hide-scroll " style={{backgroundColor:blok.popup_background_color,color:colors[0].text_color}}>
                                             {
                                                 dep.employees.map((emp:any,index:number)=>(
-                                                    <EmployeeCard employee={emp} jobrole_color={jobrole_text_color}  />
+                                                    <EmployeeCard employee={emp} key={index} className="justify-self-center place-self-center" jobrole_color={jobrole_text_color}  />
                                                 ))
                                             }
                                         </DialogContent>
@@ -75,7 +75,7 @@ export function Organization({blok}:{blok:any}){
                 {
                     isInView&&
                     <AnimateFromBelowComponent className=" flex flex-col mt-[40px] lg:mt-[97px] gap-[19px] self-center text-center items-center  ">
-                        <div >
+                        <div>
                             <h4 className=" ">{hiring[0].title}</h4>
                             <text>{hiring[0].overview}</text>
                             <Pagelink text={hiring[0].link_text} variant={colors[0].link_variant} url={hiring[0].link.url} />
@@ -91,7 +91,7 @@ const EmployeeCard=({employee,jobrole_color,className}:{employee:any,jobrole_col
     const emp=employee;
     return(
         <div className={`w-[300px] md:max-w-[250px] min-h-[300px] flex flex-col items-center gap-[24px] `+className} key={emp._uid}>
-            <Image src={emp.profileimage.filename} width={150} height={150} alt={emp.profileimage.alt} className=" justify-self-center" />
+            <Image src={emp.profileimage.filename} width={250} height={250} alt={emp.profileimage.alt} className=" justify-self-center" />
             <div className=" flex flex-col text-center font-[Roboto]">
                 <text className=" text-[20px] leading-[30px] font-[600]">{emp.name}</text>
                 <text className=" text-[18px] leading-[27px] " style={{color:jobrole_color}} >{emp.jobtitle}</text>

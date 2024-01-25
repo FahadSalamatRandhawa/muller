@@ -55,7 +55,7 @@ export default function ItemsCard({blok,buttontext,link_variant,divider_color,is
               }
               return(
                 <Skeleton isLoaded={!isLoading} fitContent={true} key={blok._uid} > 
-                    <div className=' flex flex-col w-full md:w-[95%] 1400px:w-[95%] lg:w-[90%] xl:w-[90%] pr-[10px] md:pr-0 p-r-[10px] min-h-[400px] md:min-h-[600px] lg:h-[936px] xl:h-auto justify-stretch gap-[20px] py-[18px] xl:py-[30px]' key={blok.uuid} >
+                    <div className=' flex flex-col w-full md:w-[95%] 1400px:w-[95%] lg:w-[90%] xl:w-[90%] pr-[10px] md:px-0 px-[15px] min-h-[400px] md:min-h-[600px] lg:h-[936px] xl:h-auto justify-stretch gap-[20px] py-[18px] xl:py-[30px]' key={blok.uuid} >
                     {
                       isInView&&
                       <Link href={`/${blok.full_slug}`}>
