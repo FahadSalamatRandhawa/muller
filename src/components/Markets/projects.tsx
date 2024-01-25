@@ -45,7 +45,7 @@ export default function Projects({blok}:{blok:any}){
                                 isInView&&
                                 <AnimateFromFarRightComponent className=" relative w-full h-[400px] lg:h-[640px] xl:h-[900px] z-10" key={index}>
                                     
-                                        <Image src={project.image.filename} fill alt={project.image.alt} priority sizes="(min-width:1180px) h-[640px] 90vw ,(min-width:1880px) h-[900px] 100vw" />
+                                        <Image src={project.image.filename} fill alt={project.image.alt} priority sizes="(min-width:1180px) h-[640px] 90vw ,(min-width:1880px) h-[900px] 100vw" style={{objectFit:"contain"}} />
                                     
                                 </AnimateFromFarRightComponent>
                             }

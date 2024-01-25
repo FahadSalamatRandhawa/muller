@@ -19,8 +19,8 @@ export default function MarketPoints({blok}:{blok:any}){
                             {
                                 isInView&&
                                 <>
-                                    <AnimateFromFarRightComponent className=" relative bg-orange-500 h-[100px] w-[100px] ">
-                                        <Image src={point.image.filename} fill objectPosition="absolute" objectFit="cover" className=" border-2 border-B-Yellow" alt={point.image.alt} />
+                                    <AnimateFromFarRightComponent className=" relative h-[100px] w-[100px] ">
+                                        <Image src={point.image.filename} fill objectPosition="absolute" objectFit="cover" alt={point.image.alt} />
                                     </AnimateFromFarRightComponent>
                                     <AnimateFromBelowComponent className="">
                                         <h4 className="  ">{point.heading}</h4>
