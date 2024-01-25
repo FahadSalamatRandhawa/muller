@@ -29,13 +29,13 @@ export function ContactTopGrid({blok}:{blok:any}){
                     </AnimateFromBelowComponent>
                 }
                 <div className="grid h-screen w-full md:w-auto grid-cols-2 overflow-auto pointer-events-none " style={{gap:space_between_slider+"px"}} >
-                    <div className=" md:h-screen flex flex-col w-full overflow-auto hide-scroll ">
+                    <div className=" md:h-screen flex flex-col w-full overflow-auto hide-scroll " style={{gap:space_between_images+"px"}}>
                         <div className=" flex flex-col animate-upward" style={{gap:space_between_images+"px"}} >
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
                                 <Suspense fallback="Hehe">
-                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} quality={80} sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
+                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} objectFit="cover" quality={80} sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
                                 </Suspense>
                             </div>
                         ))
@@ -45,19 +45,19 @@ export function ContactTopGrid({blok}:{blok:any}){
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative  snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
-                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} quality={80} sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
+                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} objectFit="cover" quality={80} sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
                             </div>
                         ))
                         }
                         </div>
                     </div>
                     
-                    <div className=" h-screen flex flex-col w-full overflow-auto hide-scroll " style={{gap:space_between_slider+"px"}}>
+                    <div className=" h-screen flex flex-col w-full overflow-auto hide-scroll " style={{gap:space_between_images+"px"}}>
                         <div className=" flex flex-col animate-downward" style={{gap:space_between_images+"px"}}>
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
-                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} quality={80} sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
+                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} objectFit="cover" quality={80} sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
                             </div>
                         ))
                         }
@@ -66,7 +66,7 @@ export function ContactTopGrid({blok}:{blok:any}){
                         {
                         blok.image_list1&&blok.image_list1.map((image:any)=>(
                             <div className=" relative  snap-always snap-center w-full md:w-[264px] min-h-[250px] md:min-h-[340px]" key={image._uid}>
-                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
+                                <Image src={image.filename} priority fill alt={image.alt} key={image._uid} objectFit="cover" sizes="(min-width:800px)w-[264px] min-h-[250px] md:min-h-[340px]" />
                             </div>
                         ))
                         }
