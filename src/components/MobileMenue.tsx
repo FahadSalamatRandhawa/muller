@@ -54,24 +54,25 @@ export function MobileMenue({blok}:{blok:any}){
             <Accordion className=" flex flex-col gap-[10px] text-center "  borderColor={background_color} allowToggle>
             {
                 blok.name.map((n:any,index:number)=>(
-                    <AccordionItem className=" w-full flex flex-col justify-evenly min-h-[37px] " borderWidth={0} key={n._uid}>
-                        <div className=" grid grid-cols-2 items-center justify-center pr-[5%] ">
+                    <AccordionItem className=" w-full flex flex-col items-center min-h-[37px] " borderWidth={0} key={n._uid}>
+                        
+                        <div className=" w-auto flex flex-col ">
                         {
                             n.items.length>0?
-                                <AccordionButton w={"auto"} justifySelf={'end'}  alignSelf={"self-start"} onClick={()=>expanded==index?setExpanded(-99):setExpanded(index)} key={index}>
+                                <AccordionButton className="flex justify-end w-auto self-center"  onClick={()=>expanded==index?setExpanded(-99):setExpanded(index)} key={index}>
                                 {expanded==index?<IoIosArrowDown/>:<IoIosArrowForward />}
                                 </AccordionButton>
                                 :<div className=" w-full invisible"><IoIosArrowDown/></div>
                         }
                         <Link onClick={()=>(dispatch(menue_close()))} href={n.link.cached_url=="home"?"/":"/"+capitalizeFirstLetter(n.link.cached_url)} className=" min-h-[30px] justify-self-start ">{n.lable}</Link>
                         </div>
-                        <AccordionPanel className=" flex flex-col w-full ">
+                        
+                        <AccordionPanel className=" flex flex-col items-center w-full ">
                         {
                             n.items.map((item:any)=>(
-                                <div className="grid grid-cols-2 w-full  pr-[5%]" key={item._uid}>
-                                    <div className=" w-full"></div>
+                                
                                 <Link onClick={()=>(dispatch(menue_close()))} href={item.url.linktype=="story"?"/"+item.url.cached_url:"/"+capitalizeFirstLetter(n.link.cached_url.split("/")[0])+item.url.url} className=" text-start justify-self-start py-[8px] " key={item._uid}>{item.Lable}</Link>
-                                </div>
+                               
                             ))
                         }
                         </AccordionPanel>
