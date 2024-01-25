@@ -56,7 +56,7 @@ export default function Testimonials({blok}:{blok:any}){
             </div>
             {
                 isInView&&video&&video.filename!=""?
-                <motion.div variants={ImageFromRightFar} initial={ImageFromRightFar.start} animate={ImageFromRightFar.finish} transition={{duration:1, stiffness: 120}} className=" absolute self-center overflow-x-hidden ">
+                <motion.div variants={ImageFromRightFar} initial={ImageFromRightFar.start} animate={ImageFromRightFar.finish} transition={{duration:1, stiffness: 120}} className=" absolute self-center mt-[50%] md:mt-0 overflow-x-hidden ">
                     <Dialog>
                         <DialogTrigger>
                         <div className=" w-[70px] md:w-[110px] h-[70px] md:h-[110px] flex items-center justify-center rounded-full border-[1px] border-brand -left-10">

@@ -56,7 +56,7 @@ export default function Benefits({blok}:{blok:any}){
                 <AnimateFromBelowComponent className="flex justify-end">
                     <div className="flex w-full max-w-[300px]" >{
                         link.map((l:any)=>(
-                            <Pagelink text={l.Lable} url={l.url} variant={colors[0].link_variant} />
+                            <Pagelink key={l.url.url} text={l.Lable} url={l.url.url} openNew={false} variant={colors[0].link_variant} />
                         ))
                     }</div>
                 </AnimateFromBelowComponent>
