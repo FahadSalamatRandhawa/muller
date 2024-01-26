@@ -49,14 +49,12 @@ export default function Testimonials({blok}:{blok:any}){
                     {blok.testimonials[value].testimonial}
                     </motion.text>
                 }
-                <div className=" flex flex-col h-[50px] self-end">
+                <div className="w-full flex flex-col text-end min-h-[50px] self-end ">
                     <text className=" font-medium">{blok.testimonials[value].name}</text>
                     <text>{blok.testimonials[value].position}</text>
-                </div>
-            </div>
-            {
+                    {
                 isInView&&video&&video.filename!=""?
-                <motion.div variants={ImageFromRightFar} initial={ImageFromRightFar.start} animate={ImageFromRightFar.finish} transition={{duration:1, stiffness: 120}} className=" absolute self-center mt-[50%] md:mt-0 overflow-x-hidden ">
+                <motion.div variants={ImageFromRightFar} initial={ImageFromRightFar.start} animate={ImageFromRightFar.finish} transition={{duration:1, stiffness: 120}} className=" absolute self-center lg:self-start md:mt-0 overflow-x-hidden z-10">
                     <Dialog>
                         <DialogTrigger>
                         <div className=" w-[70px] md:w-[110px] h-[70px] md:h-[110px] flex items-center justify-center rounded-full border-[1px] border-brand -left-10">
@@ -81,6 +79,9 @@ export default function Testimonials({blok}:{blok:any}){
                 </motion.div>
               :null
             }
+                </div>
+            </div>
+            
             {
                 isInView&&
             <motion.div variants={ImageFromLeft} initial={ImageFromLeft.start} animate={ImageFromLeft.finish} transition={transition} className=" flex gap-[20px] items-baseline">

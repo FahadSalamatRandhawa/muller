@@ -56,7 +56,7 @@ export function MobileMenue({blok}:{blok:any}){
                 blok.name.map((n:any,index:number)=>(
                     <AccordionItem className=" w-full flex flex-col items-center min-h-[37px] " borderWidth={0} key={n._uid}>
                         
-                        <div className="relative inline-flex justify-center ">
+                        <div className="relative inline-flex justify-center min-h-[40px] items-center ">
                         {
                             n.items.length>0&&
                                 <AccordionButton width={'fit-content'} p={"4px"} onClick={(event) => {event.stopPropagation();expanded == index ? setExpanded(-99) : setExpanded(index);
