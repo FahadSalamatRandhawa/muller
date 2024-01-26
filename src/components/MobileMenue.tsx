@@ -56,15 +56,16 @@ export function MobileMenue({blok}:{blok:any}){
                 blok.name.map((n:any,index:number)=>(
                     <AccordionItem className=" w-full flex flex-col items-center min-h-[37px] " borderWidth={0} key={n._uid}>
                         
-                        <div className=" w-auto flex flex-col ">
+                        <div className="relative inline-flex justify-center ">
                         {
-                            n.items.length>0?
-                                <AccordionButton className="flex justify-end w-auto self-center"  onClick={()=>expanded==index?setExpanded(-99):setExpanded(index)} key={index}>
-                                {expanded==index?<IoIosArrowDown/>:<IoIosArrowForward />}
+                            n.items.length>0&&
+                                <AccordionButton width={'fit-content'} p={"4px"} onClick={(event) => {event.stopPropagation();expanded == index ? setExpanded(-99) : setExpanded(index);
+                                }} key={index}>
+                               {expanded==index?<IoIosArrowDown/>:<IoIosArrowForward />}
                                 </AccordionButton>
-                                :<div className=" w-full invisible"><IoIosArrowDown/></div>
                         }
-                        <Link onClick={()=>(dispatch(menue_close()))} href={n.link.cached_url=="home"?"/":"/"+capitalizeFirstLetter(n.link.cached_url)} className=" min-h-[30px] justify-self-start ">{n.lable}</Link>
+                            <Link onClick={()=>(dispatch(menue_close()))} href={n.link.cached_url=="home"?"/":"/"+capitalizeFirstLetter(n.link.cached_url)} className=" min-h-[30px] self-center">{n.lable}</Link>
+
                         </div>
                         
                         <AccordionPanel className=" flex flex-col items-center w-full ">
