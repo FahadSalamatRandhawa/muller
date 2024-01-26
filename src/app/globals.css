@@ -5,11 +5,11 @@
 .hide-scroll::-webkit-scrollbar { background: transparent; /* make scrollbar transparent */ width: 0px; }
 
 text{
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto';
 }
 
 p{
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto';
 }
 
 .typed-h {
@@ -39,7 +39,7 @@ p{
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: "Helvetica Neue";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 21px;
   scroll-behavior: smooth;
@@ -51,7 +51,7 @@ body {
   h1 {
     font-size: 40px;
     line-height: 44px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto';
   }
 }
 
@@ -60,7 +60,7 @@ body {
   h1 {
     font-size: 60px;
     line-height: 64px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto';
   }
 }
 
@@ -69,13 +69,13 @@ body {
   h1 {
     font-size: 80px;
     line-height: 84px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto';
   }
 }
 
 
 h2{
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto';
 }
 
 /* For screens smaller than 600px */
@@ -120,7 +120,7 @@ h3{
   font-weight: 400;
   font-size: 60px;
   line-height: 66px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto';
 }
 
 /* For screens smaller than 600px */
@@ -151,7 +151,7 @@ h4{
   font-weight: 300;
   font-size: 30px;
   line-height: 33px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto';
 }
 
 /* For screens smaller than 600px */
@@ -183,7 +183,7 @@ h4{
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto';
 }
 
 /* For screens smaller than 600px */
@@ -212,7 +212,7 @@ h4{
 }
 
 .Text-18{
-font-family: 'Helvetica Neue', sans-serif;
+font-family: 'Roboto';
 font-size: 21px;
 font-weight: 400;
 line-height: 34px;
@@ -276,7 +276,7 @@ input[type=checkbox] {
   outline: none;
   color: white;
   background-color: inherit;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto';
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
@@ -284,7 +284,7 @@ input[type=checkbox] {
   .dropdown .dropbtn {
     border-bottom: 1px solid white; /* Add a border bottom */
     color: white;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto';
     margin: 0; /* Important for vertical align on mobile phones */
     width: 100%; /* Make the button full width */
   }
