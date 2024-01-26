@@ -55,18 +55,22 @@ export function Organization({blok}:{blok:any}){
                         {
                             isInView&&departments.map((dep:any,index:number)=>(
                                     <AnimateFromFarRightComponent className="flex justify-center " key={index}>
-                                        <Dialog>
-                                        <DialogTrigger >
-                                            {dep.department_head.map((head:any)=>(<EmployeeCard employee={head} jobrole_color={jobrole_text_color}  className="justify-self-center place-self-center"/>))}
-                                        </DialogTrigger>
-                                        <DialogContent className=" overflow-auto max-h-screen max-w-[95%] flex flex-wrap justify-evenly md:grid md:grid-cols-2 lg:grid-cols-3 gap-[5px] hide-scroll " style={{backgroundColor:blok.popup_background_color,color:colors[0].text_color}}>
-                                            {
-                                                dep.employees.map((emp:any,index:number)=>(
-                                                    <EmployeeCard employee={emp} key={index} className="justify-self-center place-self-center" jobrole_color={jobrole_text_color}  />
-                                                ))
-                                            }
-                                        </DialogContent>
-                                    </Dialog>
+                                        {
+                                            dep.employees.length>0?
+                                            <Dialog>
+                                                <DialogTrigger >
+                                                    {dep.department_head.map((head:any)=>(<EmployeeCard employee={head} jobrole_color={jobrole_text_color}  className="justify-self-center place-self-center"/>))}
+                                                </DialogTrigger>
+                                                <DialogContent className=" overflow-auto max-h-screen max-w-[95%] flex flex-wrap justify-evenly md:grid md:grid-cols-2 lg:grid-cols-3 gap-[5px] hide-scroll " style={{backgroundColor:blok.popup_background_color,color:colors[0].text_color}}>
+                                                    {
+                                                        dep.employees.map((emp:any,index:number)=>(
+                                                            <EmployeeCard employee={emp} key={index} className="justify-self-center place-self-center" jobrole_color={jobrole_text_color}  />
+                                                        ))
+                                                    }
+                                                </DialogContent>
+                                            </Dialog>
+                                            :dep.department_head.map((head:any)=>(<EmployeeCard employee={head} jobrole_color={jobrole_text_color}  className="justify-self-center place-self-center"/>))
+                                        }
                                     </AnimateFromFarRightComponent>
                             ))
                         }
