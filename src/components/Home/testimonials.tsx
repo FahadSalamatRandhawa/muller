@@ -40,21 +40,11 @@ export default function Testimonials({blok}:{blok:any}){
     }
     const {video}=blok.testimonials[value];
     return(
-            <div ref={ref} className=" min-h-screen flex flex-col py-[27px] lg:py-[35px] px-[10px] md:pl-[39px] md:pr-[92px] justify-evenly overflow-hidden"  style={{backgroundColor:blok.background_color,color:blok.text_color}} id={blok.anchor_id} {...storyblokEditable(blok)} >
+            <div ref={ref} className=" relative min-h-screen flex flex-col py-[27px] lg:py-[35px] px-[10px] md:pl-[39px] md:pr-[92px] justify-evenly overflow-hidden"  style={{backgroundColor:blok.background_color,color:blok.text_color}} id={blok.anchor_id} {...storyblokEditable(blok)} >
             <p className=" ">{blok.title}</p>
-            <div className="flex flex-col justify-between w-full lg:w-[580px] py-[85px] gap-[45px] self-end ">
-                {
-                    isInView&&
-                    <motion.text variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className="h-max-[580px] text-[35px] overflow-hidden leading-[39px]">
-                    {blok.testimonials[value].testimonial}
-                    </motion.text>
-                }
-                <div className="w-full flex flex-col text-end min-h-[50px] self-end ">
-                    <text className=" font-medium">{blok.testimonials[value].name}</text>
-                    <text>{blok.testimonials[value].position}</text>
-                    {
+            {
                 isInView&&video&&video.filename!=""?
-                <motion.div variants={ImageFromRightFar} initial={ImageFromRightFar.start} animate={ImageFromRightFar.finish} transition={{duration:1, stiffness: 120}} className=" absolute self-center lg:self-start md:mt-0 overflow-x-hidden z-10">
+                <motion.div variants={ImageFromRightFar} initial={ImageFromRightFar.start} animate={ImageFromRightFar.finish} transition={{duration:1, stiffness: 120}} className=" absolute self-center mt-[60%] sm:mt-[50%] md:mt-[20%] overflow-x-hidden z-10">
                     <Dialog>
                         <DialogTrigger>
                         <div className=" w-[70px] md:w-[110px] h-[70px] md:h-[110px] flex items-center justify-center rounded-full border-[1px] border-brand -left-10">
@@ -79,6 +69,17 @@ export default function Testimonials({blok}:{blok:any}){
                 </motion.div>
               :null
             }
+            <div className="flex flex-col justify-between w-full lg:w-[580px] py-[85px] gap-[45px] self-end ">
+                {
+                    isInView&&
+                    <motion.text variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className="h-max-[580px] text-[35px] overflow-hidden leading-[39px]">
+                    {blok.testimonials[value].testimonial}
+                    </motion.text>
+                }
+                
+                <div className="w-full flex flex-col text-end min-h-[50px] self-end relative ">
+                    <text className=" font-medium">{blok.testimonials[value].name}</text>
+                    <text>{blok.testimonials[value].position}</text>
                 </div>
             </div>
             
