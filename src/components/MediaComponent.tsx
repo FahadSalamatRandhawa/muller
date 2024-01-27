@@ -23,9 +23,9 @@ function MediaRenderer({url,type,width,height,alt="",muted=true}:{url:string,typ
     return <ReactPlayer config={{
         youtube: {
           playerVars: { 
-            showinfo: 1,
-            modestbranding: 1,
-            controls: 1,
+            showinfo: 0,
+            modestbranding: 0,
+            controls: 0,
           },
         }
       }}

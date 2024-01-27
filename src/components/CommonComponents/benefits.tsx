@@ -9,7 +9,6 @@ import { AnimateFromBelowComponent, AnimateFromFarRightComponent, AnimateFromLef
 import {motion} from 'framer-motion'
 
 export default function Benefits({blok}:{blok:any}){
-    console.log(blok)
     const ref=useRef(null);
     const isInView=useInView(ref,{once:true})
     const benefits=blok.benefits
