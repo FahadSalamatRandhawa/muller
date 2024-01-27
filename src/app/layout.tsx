@@ -47,7 +47,7 @@ export default async function RootLayout({
     
       <html lang="en" >
         <StoryblokProvider>
-      <body className={" -top-[40px] lg:-top-[50px] "}>
+      <body className={" -top-[40px] lg:-top-[60px] "}>
         <Redux_Providers>
           <Providers>
             <StoryblokStory story={header.story} />

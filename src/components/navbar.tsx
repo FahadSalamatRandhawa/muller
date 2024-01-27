@@ -34,11 +34,11 @@ export function Navigation({blok}:{blok:any}){
     function changeBg(){
         var scrollValue=window.scrollY;
         if(scrollValue>bg_change_trigger_value){
-            setBGColor(background_color_change);
+            setIsScrolled(true);
         }
         
     }
-    const [bgColor, setBGColor] = useState(background_color);
+    const [isScollred, setIsScrolled] = useState(false);
 
     useEffect(() => {
         window.addEventListener("scroll", changeBg);
@@ -48,15 +48,15 @@ export function Navigation({blok}:{blok:any}){
     
     return(
         <>
-        <div className=" sticky invisible hidden lg:visible w-full h-[50px] lg:flex items-center justify-between top-0 z-40 pl-3" style={{color:text_color}} {...storyblokEditable(blok)}>
+        <div className=" sticky invisible hidden lg:visible w-full h-[60px] lg:flex items-center justify-between top-0 z-40 pl-3" style={{color:text_color,backgroundColor:isScollred?background_color_change:""}} {...storyblokEditable(blok)}>
             <Link href={blok.logo_link.cached_url=="home"?"/":blok.logo_link.url}><Image height={35} width={166} src={blok.logo.filename} alt={blok.logo.alt} /></Link>
-            <div className="  flex justify-end items-center w-auto px-[20px] py-[15px] text-[21px] font-[400] rounded-bl-[8px] gap-[20px]" style={{backgroundColor:bgColor}}>
+            <div className=" h-full flex justify-end items-center w-auto px-[20px] text-[21px] font-[400] rounded-bl-[8px] gap-[20px]" style={{backgroundColor:isScollred?background_color_change:background_color}}>
             {
                 blok.name.map((n:any)=>(
                     <div className="dropdown" key={n._uid}>
                         <Link href={n.link.cached_url=="home"?"/":"/"+capitalizeFirstLetter(n.link.cached_url)} className="dropbtn">{n.lable}</Link>
                         {
-                            n.items.length&&n.items.length>0?(<div className="dropdown-content p-[15px] rounded-bl-[8px] rounded-br-[8px] Text-16 " style={{backgroundColor:bgColor}}>
+                            n.items.length&&n.items.length>0?(<div className="dropdown-content p-[15px] rounded-bl-[8px] rounded-br-[8px] Text-16 " style={{backgroundColor:isScollred?background_color_change:background_color}}>
                             {
                                 n.items.map((item:any)=>(
                                     <Link href={item.url.linktype=="story"?"/"+item.url.cached_url:"/"+capitalizeFirstLetter(n.link.cached_url.split("/")[0])+item.url.url} className=" py-[8px] border-b " key={item._uid}>{item.Lable}</Link>
