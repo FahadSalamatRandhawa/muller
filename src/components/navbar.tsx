@@ -1,15 +1,15 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { MobileMenue } from "./MobileMenue";
 import { storyblokEditable } from "@storyblok/react";
-import Header from "./Hamburg_Menue";
+import { useEffect, useState } from "react";
 
 export function capitalizeFirstLetter(string:string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-
-export async function Navigation({blok}:{blok:any}){
+export function Navigation({blok}:{blok:any}){
     //console.log(blok.socials[0].image.filename)
     //const {data}=await Storyblok.get('cdn/stories/navigation', {version:"published"});
     //const items=data.story.content.name;
@@ -27,13 +27,30 @@ export async function Navigation({blok}:{blok:any}){
      * 
      */
 
+    const {bg_change_trigger_value}=blok;
+    const {background_color_change}=blok
     const {background_color}=blok;
     const {text_color}=blok;
+    function changeBg(){
+        var scrollValue=window.scrollY;
+        if(scrollValue>bg_change_trigger_value){
+            setBGColor(background_color_change);
+        }
+        
+    }
+    const [bgColor, setBGColor] = useState(background_color);
+
+    useEffect(() => {
+        window.addEventListener("scroll", changeBg);
+        // Remove the event listener on cleanup
+        return () => window.removeEventListener("scroll", changeBg);
+      }, []);
+    
     return(
         <>
         <div className=" sticky invisible hidden lg:visible w-full h-[50px] lg:flex items-center justify-between top-0 z-40 pl-3" style={{color:text_color}} {...storyblokEditable(blok)}>
             <Link href={blok.logo_link.cached_url=="home"?"/":blok.logo_link.url}><Image height={35} width={166} src={blok.logo.filename} alt={blok.logo.alt} /></Link>
-            <div className="  flex justify-end items-center w-auto px-[20px] py-[15px] text-[21px] font-[400] rounded-bl-[8px] gap-[20px]" style={{backgroundColor:background_color}}>
+            <div className="  flex justify-end items-center w-auto px-[20px] py-[15px] text-[21px] font-[400] rounded-bl-[8px] gap-[20px]" style={{backgroundColor:bgColor}}>
             {
                 blok.name.map((n:any)=>(
                     <div className="dropdown" key={n._uid}>
