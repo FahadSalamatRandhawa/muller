@@ -5,7 +5,6 @@
 .hide-scroll::-webkit-scrollbar { background: transparent; /* make scrollbar transparent */ width: 0px; }
 
 text{
-  font-family: 'Roboto';
 }
 
 p{
@@ -39,7 +38,6 @@ p{
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 21px;
   scroll-behavior: smooth;
@@ -69,7 +67,6 @@ body {
   h1 {
     font-size: 80px;
     line-height: 84px;
-    font-family: 'Roboto';
   }
 }
 
@@ -358,7 +355,8 @@ input[type=checkbox] {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: url('/fonts/roboto-v30-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-100.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-100.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* roboto-300 - latin */
 @font-face {
@@ -366,7 +364,8 @@ input[type=checkbox] {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: url('/fonts/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* roboto-regular - latin */
 @font-face {
@@ -374,7 +373,8 @@ input[type=checkbox] {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* roboto-500 - latin */
 @font-face {
@@ -382,7 +382,8 @@ input[type=checkbox] {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* roboto-700 - latin */
 @font-face {
@@ -390,7 +391,8 @@ input[type=checkbox] {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* roboto-900 - latin */
 @font-face {
@@ -398,9 +400,6 @@ input[type=checkbox] {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url('/fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-900.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-
-
-
-
