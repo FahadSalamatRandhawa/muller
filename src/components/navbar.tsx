@@ -33,22 +33,21 @@ export function Navigation({blok}:{blok:any}){
     const {text_color}=blok;
     function changeBg(){
         var scrollValue=window.scrollY;
-        if(scrollValue>bg_change_trigger_value){
+        if(scrollValue>bg_change_trigger_value&&isScollred!=true){
             setIsScrolled(true);
+        }else if(scrollValue<bg_change_trigger_value&&isScollred==true){
+            setIsScrolled(false);
         }
         
     }
     const [isScollred, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        window.addEventListener("scroll", changeBg);
-        // Remove the event listener on cleanup
-        return () => window.removeEventListener("scroll", changeBg);
-      }, []);
+    window.addEventListener("scroll", changeBg);
+    
     
     return(
         <>
-        <div className=" sticky invisible hidden lg:visible w-full h-[60px] lg:flex items-center justify-between top-0 z-40 pl-3" style={{color:text_color,backgroundColor:isScollred?background_color_change:""}} {...storyblokEditable(blok)}>
+        <div className=" sticky invisible hidden lg:visible w-full h-[60px] lg:flex items-center justify-between -top-[1px] z-40 pl-3" style={{color:text_color,backgroundColor:isScollred?background_color_change:""}} {...storyblokEditable(blok)}>
             <Link href={blok.logo_link.cached_url=="home"?"/":blok.logo_link.url}><Image height={35} width={166} src={blok.logo.filename} alt={blok.logo.alt} /></Link>
             <div className=" h-full flex justify-end items-center w-auto px-[20px] text-[21px] font-[400] rounded-bl-[8px] gap-[20px]" style={{backgroundColor:isScollred?background_color_change:background_color}}>
             {
