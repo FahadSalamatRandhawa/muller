@@ -50,7 +50,7 @@ import Pagelink from "@/components/link";
                       <FormItem>
                       <FormLabel>Full Name</FormLabel>
                       <FormControl>
-                          <input {...field} placeholder={blok.nameplaceholder!=''?blok.nameplaceholder:"Your name"} className={` min-w-full h-[58px]  p-[12px] border-b-[1px] ${color_variant=="white"?"placeholder:text-grey-2":"placeholder:text-B-grey font-DM_Mono font-[500] "}`} style={{backgroundColor:"transparent",borderBottomColor:colors[0].border_color}}  />
+                          <input {...field} placeholder={blok.nameplaceholder!=''?blok.nameplaceholder:"Your name"} className={` min-w-full h-[58px]  p-[12px] border-b-[1px] ${color_variant=="white"?"placeholder:text-grey-2":"placeholder:text-B-grey font-[500] "}`} style={{backgroundColor:"transparent",borderBottomColor:colors[0].border_color}}  />
                       </FormControl>
                       
                       <FormMessage />
@@ -64,7 +64,7 @@ import Pagelink from "@/components/link";
                       <FormItem>
                       <FormLabel>Email Address</FormLabel>
                       <FormControl>
-                          <input {...field} placeholder={blok.emailplaceholder!=''?blok.emailplaceholder:"Your email"}  className={` min-w-full border-b-[1px] p-[12px] h-[58px] ${color_variant=="white"?"placeholder:text-grey-2 bg-white":"placeholder:text-B-grey font-DM_Mono font-[500]"} `} style={{backgroundColor:"transparent",borderBottomColor:colors[0].border_color}}  />
+                          <input {...field} placeholder={blok.emailplaceholder!=''?blok.emailplaceholder:"Your email"}  className={` min-w-full border-b-[1px] p-[12px] h-[58px] ${color_variant=="white"?"placeholder:text-grey-2 bg-white":"placeholder:text-B-grey font-[500]"} `} style={{backgroundColor:"transparent",borderBottomColor:colors[0].border_color}}  />
                       </FormControl>
                       
                       <FormMessage />
@@ -78,13 +78,13 @@ import Pagelink from "@/components/link";
                       <FormItem>
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                      <textarea {...field} placeholder={blok.messageplaceholder!=''?blok.messageplaceholder:"Your Message"}  className={` min-w-full border-b-[1px] p-[12px] h-[156px] font-Helvectica ${color_variant=="white"?"placeholder:text-grey-2 bg-white":"placeholder:text-B-grey font-DM_Mono font-[500]"} `} style={{backgroundColor:"transparent",borderBottomColor:colors[0].border_color}} />
+                      <textarea {...field} placeholder={blok.messageplaceholder!=''?blok.messageplaceholder:"Your Message"}  className={` min-w-full border-b-[1px] p-[12px] h-[156px] ${color_variant=="white"?"placeholder:text-grey-2 bg-white":"placeholder:text-B-grey  font-[500]"} `} style={{backgroundColor:"transparent",borderBottomColor:colors[0].border_color}} />
                       </FormControl>
                       <FormMessage />
                       </FormItem>
                   )}
                   />
-                    <div className="  flex text-[14px] leading-[22.4px] font-DM_Mono"><hr className={`w-[20px] mt-[13px] border-[1px] mr-3`} style={{borderColor:colors[0].border_color}} /> {blok.disclaimer}</div>
+                    <div className="  flex text-[14px] leading-[22.4px] "><hr className={`w-[20px] mt-[13px] border-[1px] mr-3`} style={{borderColor:colors[0].border_color}} /> {blok.disclaimer}</div>
                   <button className=" w-full" type="submit" ><Pagelink  variant={colors[0].link_variant} text={blok.button_text} /></button>
               </form>
               </Form>
