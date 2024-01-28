@@ -26,6 +26,7 @@ export function Navigation({blok}:{blok:any}){
                                 </Link>
      * 
      */
+    window.addEventListener("scroll", changeBg);
 
     const {bg_change_trigger_value}=blok;
     const {background_color_change}=blok
@@ -42,7 +43,6 @@ export function Navigation({blok}:{blok:any}){
     }
     const [isScollred, setIsScrolled] = useState(false);
 
-    window.addEventListener("scroll", changeBg);
     
     
     return(

@@ -32,26 +32,47 @@ import { menue_close, mobile_state_toggle } from "@/state_stores/Mobile_Menue_Sl
 export function MobileMenue({blok}:{blok:any}){
 
     const [expanded,setExpanded]=useState(-99)
+    const [isScollred, setIsScrolled] = useState(false);
+    
     const dispatch=useDispatch()
     const mobile_state=useSelector((state:RootState)=>state.Mobile_Menue_Slice.opened);
 
+    const {bg_change_trigger_value}=blok;
+    const {background_color_change}=blok
     const {background_color}=blok;
     const {text_color}=blok;
 
-    return <div className={`w-full sticky flex justify-between items-center z-50 top-0 h-[40px] lg:invisible lg:hidden `} style={{backgroundColor:mobile_state?background_color:""}} {...storyblokEditable(blok)}>
+    let bgColor=background_color;
+    if(isScollred){
+        bgColor=background_color_change;
+    }
+
+    function changeBg(){
+        var scrollValue=window.scrollY;
+        if(scrollValue>bg_change_trigger_value&&isScollred!=true){
+            setIsScrolled(true);
+        }else if(scrollValue<bg_change_trigger_value&&isScollred==true){
+            setIsScrolled(false);
+        }
+        
+    }
+
+    window.addEventListener("scroll", changeBg);
+
+    return <div className={`w-full sticky flex justify-between items-center z-50 top-0 h-[40px] lg:invisible lg:hidden `} style={{backgroundColor:mobile_state||isScollred?bgColor:""}} {...storyblokEditable(blok)}>
             <Link href={blok.logo_link.cached_url=="home"?"/":blok.logo_link.url}><Image className=" drop-shadow-2xl z-40" height={35} width={166} src={mobile_state?blok.mobile_menue_open_logo.filename:blok.logo.filename} alt={blok.logo.alt} /></Link>
-            <div className={` flex flex-row-reverse items-center gap-[10px] md:gap-[20px]  px-[20px] rounded-bl-[8px] `} style={{backgroundColor:background_color}}>
+            <div className={` flex flex-row-reverse items-center gap-[10px] md:gap-[20px]  px-[20px] rounded-bl-[8px] `} style={{backgroundColor:bgColor}}>
             {
                 blok.socials.map((social:any)=>(
                     <Link href={social.url.url} target="_blank" key={social._uid}><Image src={social.image.filename} alt={social.image.alt} width={24} height={24} /></Link>
                 ))
             }
             <Popover open={mobile_state}>
-            <PopoverTrigger onClick={()=>(dispatch(mobile_state_toggle()))} style={{backgroundColor:background_color}} asChild>
+            <PopoverTrigger onClick={()=>(dispatch(mobile_state_toggle()))} style={{backgroundColor:bgColor}} asChild>
                 <Button className=" flex flex-col gap-[6px] items-end text-white ">{mobile_state?<RxCross1/>:<><hr className=" w-[35px]"/><hr className=" w-[20px]"/></>}</Button>
             </PopoverTrigger>
-            <PopoverContent className=" w-screen min-h-screen flex flex-col text-center -mt-2 border-0 bg-cover" style={{backgroundColor:background_color,color:text_color}}>
-            <Accordion className=" flex flex-col gap-[10px] text-center "  borderColor={background_color} allowToggle>
+            <PopoverContent className=" w-screen min-h-screen flex flex-col text-center -mt-2 border-0 bg-cover" style={{backgroundColor:bgColor,color:text_color}}>
+            <Accordion className=" flex flex-col gap-[10px] text-center "  borderColor={bgColor} allowToggle>
             {
                 blok.name.map((n:any,index:number)=>(
                     <AccordionItem className=" w-full flex flex-col items-center min-h-[37px] " borderWidth={0} key={n._uid}>
