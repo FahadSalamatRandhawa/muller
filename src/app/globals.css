@@ -5,6 +5,11 @@
 .hide-scroll::-webkit-scrollbar { background: transparent; /* make scrollbar transparent */ width: 0px; }
 
 text{
+  font-family: 'Roboto';
+}
+
+div{
+  font-family: 'Roboto';
 }
 
 p{

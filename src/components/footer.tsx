@@ -12,11 +12,11 @@ export default function Footer({blok}:{blok:any}){
     const {background_color}=blok;
 
     return (
-        <div className=" flex flex-col px-[10px] md:px-[30px] lg:px-[64px] py-[20px] md:py-[40px] lg:py-[80px] gap-y-[20px] md:gap-y-[40px] lg:gap-y-[80px] font-[500] text-[14px] font-['DM_Mono']" style={{backgroundColor:background_color,color:text_color}} {...storyblokEditable(blok)}>
+        <div className=" flex flex-col px-[10px] md:px-[30px] lg:px-[64px] py-[20px] md:py-[40px] lg:py-[80px] gap-y-[20px] md:gap-y-[40px] lg:gap-y-[80px] font-[500] text-[14px]" style={{backgroundColor:background_color,color:text_color}} {...storyblokEditable(blok)}>
             <div className=" flex flex-col md:flex-row justify-between ">
                 <div className=" w-auto md:w-[500px] grid grid-cols-1 gap-[24px]">
                 <Link href={blok.logo_link.cached_url=="home"?"/":blok.logo_link.url}><Image src={blok.logo.filename} width={166} height={36} alt={blok.logo.alt}/></Link>
-                    <text className=" font-['DM Mono'] text-[14px] leading-[22.4px]">{blok.message}</text>
+                    <text className=" text-[14px] leading-[22.4px]">{blok.message}</text>
                     <div className=" flex justify-between h-[58px] p-[12px]">
                         <input className=" border-b-[1px]" style={{borderColor:border_color}} placeholder=" Enter your email" />
                         <Link href={blok.subscribe.url} className="flex items-center px-[24px] py-[12px] border-b-[1px] text-[18px] leading-[28.8px]" style={{borderColor:border_color}} >Subscribe</Link>

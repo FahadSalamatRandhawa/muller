@@ -23,7 +23,7 @@ export default function Signup({blok}:{blok:any}) {
                     
                     <div className=" flex items-center gap-3 mx-2">
                         <hr className=" w-[25px] " style={{borderColor:colors[0].border_color}} />
-                        <text className=" text-[14px] leading-[22.6px] font-DM_Mono text-start">{blok.disclaimer}</text>
+                        <text className=" text-[14px] leading-[22.6px] text-start">{blok.disclaimer}</text>
                     </div>
                     <Pagelink url={blok.link[0].url.url} text={blok.link[0].Lable}  variant={colors[0].link_variant} />
                     </div>

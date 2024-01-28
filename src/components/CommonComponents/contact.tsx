@@ -41,7 +41,7 @@ export default function Contact({blok}:{blok:any}) {
                                 <div className=" flex flex-col gap-[16px] text-start">
                                     <h4 className=" heading4">{c.country}</h4>
                                     <text className=" ">{c.name}</text>
-                                    <Link href={c.link.linktype=="email"?"mailto:"+c.link.url:c.link.url} className=" font-['DM_Mono'] font-[500] text-[18px]">{c.link_text}</Link>
+                                    <Link href={c.link.linktype=="email"?"mailto:"+c.link.url:c.link.url} className=" font-[500] text-[18px]">{c.link_text}</Link>
                                 </div>
                             </AnimateFromBelowComponent>
                         }

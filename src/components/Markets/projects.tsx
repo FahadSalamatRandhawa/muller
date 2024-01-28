@@ -55,7 +55,7 @@ export default function Projects({blok}:{blok:any}){
                                     <div className={`grid grid-cols-1 md:grid-cols-2  transition-all animate-out ease-in-out duration-1000 `}>
                                         <div>
                                             <h4 className="  ">{project.name}</h4>
-                                            <div className=" flex flex-wrap gap-[8px] font-[DM Mono] text-[14px] leading-[22.4px] font-[500] mt-[16px] " style={{color:blok.tag_text_color}}>
+                                            <div className=" flex flex-wrap gap-[8px] text-[14px] leading-[22.4px] font-[500] mt-[16px] " style={{color:blok.tag_text_color}}>
                                                 {
                                                     project.tags.map((tag:any)=>(
                                                         <div className=" h-[30px] px-[8px] py-[4px]" style={{backgroundColor:blok.tag_background_color}} key={tag._uid} >{tag.name}</div>

@@ -44,7 +44,7 @@ export default function Tagline({blok}:{blok:any}){
                                     <motion.div variants={AppearFromBelow} initial={AppearFromBelow.start} animate={AppearFromBelow.finish} transition={transition} className=" grid grid-cols-1 pl-[10px] md:pl-[27px]" style={{borderLeft:`1px solid ${l.border_color}`}} >
                                         <text className=" heading3">{l.country}</text>
                                         <text className=" lg:leading-[33.6px] mt-[16px] mb-[24px]">{l.location}</text>
-                                        <Link href={l.link}><text className=" font-['DM_Mono'] font-[500] text-[18px]">{l.linktext}</text></Link>
+                                        <Link href={l.link}><text className=" font-[500] text-[18px]">{l.linktext}</text></Link>
                                     </motion.div>
                                 }
                             </div>

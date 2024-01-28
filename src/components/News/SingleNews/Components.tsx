@@ -20,7 +20,7 @@ export function HeadingsDescription({blok,Colors,SelectedColor}:{blok:any,Colors
                 <div className=" flex flex-col col-span-2  gap-[40px]">
                     {content.headings.map((h:any)=>(
                         <div className=" flex flex-col gap-[16px]"  key={h._uid}>
-                            <text className={`text-[${h.textsize}px] font-[${h.fontweight}]`}  id={h.heading}>{h.heading}</text>
+                            <text className={`text-[${h.textsize}px] font-[${h.fontweight}]`}  id={h.heading} >{h.heading}</text>
                             <text className=" max-w-none prose text-[21px]" style={{color:Colors[0].text_color}}>{render(h.description)}</text>
                         </div>
                     ))}
@@ -78,7 +78,7 @@ export function DiscoverNewsCard({blok,link_variant,tag_color,tag_text_color}:{b
                 <text className=" font-[500]">{content.readtime}</text>
             </div>
             <div className="flex flex-col gap-[8px]">
-                <h4 className=" heading4">{content.name}</h4>
+                <h4 className=" ">{content.name}</h4>
                 <text className=" text-[16px] leading-[25.6px]">{content.overview}</text>
             </div>
             <Pagelink url={blok.slug} variant={link_variant} width="200px" />

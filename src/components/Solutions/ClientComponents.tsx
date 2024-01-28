@@ -123,7 +123,7 @@ export default function Premade_Slider ({blok}:{blok:any}){
                                 <h4 className=" ">{stop.heading}</h4>
                                 <text className=" text-[16px]">{stop.description}</text>
                             </div>
-                            <Link href={"/"+s.full_slug} className=" text-center text-[18px] font-[500] font-DM_Mono leading-[28.8px] border-b py-2 " style={{borderColor:colors[0].border_color}}>{blok.Card_Button_Text}</Link>
+                            <Link href={"/"+s.full_slug} className=" text-center text-[18px] font-[500] leading-[28.8px] border-b py-2 " style={{borderColor:colors[0].border_color}}>{blok.Card_Button_Text}</Link>
                          </div>
                         </div>
                     )})
