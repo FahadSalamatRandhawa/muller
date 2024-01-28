@@ -13,7 +13,7 @@ export async function CareerTop({blok}:{blok:any}){
                     <text className=" text-[16px] leading-[25.6px]">{blok.category}</text>
                     <h1 className=" ">{blok.title}</h1>
                     <div className=" flex flex-col md:flex-row items-center justify-between mt-[24px]">
-                        <div className=" flex items-center text-[14px] leading-[22.4px] font-DM_Mono">
+                        <div className=" flex items-center text-[14px] leading-[22.4px] ">
                             <Image className=" rounded-full" width={56} height={56} src={blok.circledImage.filename} alt={blok.circledImage.alt} />
                             <text className=" ml-[16px] ">{(blok.date)}</text>
                             <text className=" px-[8px]">.</text>
@@ -41,7 +41,7 @@ export async function CareerDescription({blok}:{blok:any}){
                 <div className=" w-full md:w-3/4 ">
                     <text className="prose" style={{color:colors[0].text_color}}>{render(blok.description)}</text>
                     <div className=" flex items-end justify-between mt-[24px] lg:mt-[64px]">
-                            <div className=" flex flex-col gap-[16px] text-[18px] leading-[28.8px] font-DM_Mono">
+                            <div className=" flex flex-col gap-[16px] text-[18px] leading-[28.8px] ">
                                 <text className=" font-[500]">{blok.sharelable}</text>
                                 <div className=" flex gap-[8px]" >
                                     {blok.shareon&&blok.shareon.map((social:any)=>(<Image className=" p-[4px]  rounded-full" style={{backgroundColor:social_tag_background_color}} width={24} height={24} src={social.filename} alt={social.alt} />))}

@@ -165,7 +165,7 @@ import { AnimateFromBelowComponent, AnimateMultipleFromBelow } from "@/Animation
                         {
                             blok.questions.map((question:any)=>(
                                 <AccordionItem value={question._uid} className=" gap-0  " key={question._uid}>
-                                    <AccordionTrigger className=" py-[20px] text-[18px] leading-[28.8px] font-[500] font-DM_Mono">{question.heading}</AccordionTrigger>
+                                    <AccordionTrigger className=" py-[20px] text-[18px] leading-[28.8px] font-[500]">{question.heading}</AccordionTrigger>
                                     <AccordionContent className=" flex flex-col py-[32px] gap-[32px] lg:gap-[64px]" >
                                         <text>{question.description}</text>
                                     </AccordionContent>
