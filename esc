@@ -1,0 +1,407 @@
+[33mcommit 8fefc1b7e7e8deec86305790b31d77b98633b5a3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Dec 20 01:00:08 2023 +0500
+
+    image hover change
+
+[33mcommit 03fe364ef5e0907ce045b178068e1e4eeb8076fe[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 23:04:04 2023 +0500
+
+    scroll-hide
+
+[33mcommit d647af5743e3b5c770c98777c9f1d2a178783201[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 22:13:24 2023 +0500
+
+    bg gixed
+
+[33mcommit 8a98458776393a5aacffb50e52cd74d27215a269[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 22:11:58 2023 +0500
+
+    bg fixed
+
+[33mcommit 50ad77ba73cf848023145ab0dc70618e982fa294[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 22:08:54 2023 +0500
+
+    alignment fix
+
+[33mcommit 8a2003ee51c20500efa2e2b13de2c860eaeff716[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 20:23:58 2023 +0500
+
+    Dark/30 overlay added
+
+[33mcommit 82b2f1b249af1821ac5cdbfe888b52c7c4e67f58[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 20:13:12 2023 +0500
+
+    basic mobile menue
+
+[33mcommit b41cd43e5a3c654fc682359650ebe283f8a4a1f6[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 12:57:26 2023 +0500
+
+    H Top fixed
+
+[33mcommit b0894416113c31e639f00009cee560de08ed67d6[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 19 02:23:18 2023 +0500
+
+    responsivness
+
+[33mcommit f70f39f3dd97561ab20da5f7b832c3204314bacc[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 18 05:27:41 2023 +0500
+
+    solutions_together component
+
+[33mcommit 8374f80ee208ae18a4da3a3fbbbc2ce9a814f392[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 18 02:25:41 2023 +0500
+
+    a bug on Home and Navbar presists
+
+[33mcommit f982331c3a9c53faeb56df447c1f09fcccd0a840[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 18 02:10:56 2023 +0500
+
+    slugs made uppercase, input added
+
+[33mcommit 3dd096ca58ac2bc88ce2688a01291b959a9777d4[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 18 01:47:39 2023 +0500
+
+    slug changed
+
+[33mcommit dc7770d603c203bf58bb9c8b83b88c16216d772c[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 18 01:34:52 2023 +0500
+
+    import bug fixed
+
+[33mcommit 684179811a907e8acecac3ade703deacd4b58ea5[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 18 01:25:55 2023 +0500
+
+    client component seperated
+
+[33mcommit 3b63e683ec435b635d13a15a7003a3009f6fb8a9[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 18 00:12:15 2023 +0500
+
+    form action to email
+
+[33mcommit 6a48d33d051508a46ec5150b3de165e4bd4cd5ba[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 23:53:19 2023 +0500
+
+    text expand
+
+[33mcommit 203e76410aad281b8b9733953136fefac0b57101[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 23:09:43 2023 +0500
+
+    text expand
+
+[33mcommit 0483906b67a1136c0c7548cb1bbeedcbbdaf6895[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 22:16:19 2023 +0500
+
+    footer
+
+[33mcommit f8a9618d007d1fdc53ef4efd072135002afd2262[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 18:04:38 2023 +0500
+
+    video shadow added
+
+[33mcommit e5fd1822a8b6c9047270ab6a29bd0d8a3d1cda3d[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 16:44:14 2023 +0500
+
+    usp fixed
+
+[33mcommit db7c12f41d5c44a339c19d48400b58c95e48dd0e[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 16:38:26 2023 +0500
+
+    drop down navigation
+
+[33mcommit 41c9805d2bc991e5fc8876c9fe781fd060eaf4c8[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 03:13:04 2023 +0500
+
+    image contain
+
+[33mcommit 3a08a2bec6f9c833d4cf0a4ba874e1d67248b3a3[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 02:29:42 2023 +0500
+
+    location hover
+
+[33mcommit 2cf4d7fa3f48fe860dc72e83965ce70d94736c43[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 17 02:18:02 2023 +0500
+
+    numbers_task, USP_task,Cards_task
+
+[33mcommit b763f45db75366473c4a80b50ee07499efeff615[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sat Dec 16 19:07:16 2023 +0500
+
+    componenets added and changed
+
+[33mcommit e1c14df9fee8f147ea3a3355d7f81e3b391fa28f[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 23:46:10 2023 +0500
+
+    text-left
+
+[33mcommit 18f3f2fe40982f3f4b6b02f1f43544d859bab844[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 22:57:29 2023 +0500
+
+    media bug fixed
+
+[33mcommit 3128517d6b38633f8f5482935d23a0d3e06ef318[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 22:43:07 2023 +0500
+
+    misc page added card text fixed
+
+[33mcommit 38a27cce11b4c9ea4480e23852223884f9dc75fe[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 03:37:58 2023 +0500
+
+    location fixed
+
+[33mcommit 6122f62c58471de6ab5be37343c8a1607caea480[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 03:23:16 2023 +0500
+
+    image css fixed
+
+[33mcommit 62620cedb4cce078a5e7b4d16fabf99bbdb7faa9[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 03:08:53 2023 +0500
+
+    padding
+
+[33mcommit f4f5a4adf01b2f9b0cc4f4fd84b697262b3b6295[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 03:07:58 2023 +0500
+
+    bug fixed
+
+[33mcommit 1df29abaa66221287a1b4198963552b4493f7875[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 03:07:26 2023 +0500
+
+    organization bug fixed
+
+[33mcommit 7f8c368191073afb4bee3b87368fa6d2f7548d20[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 15 00:04:47 2023 +0500
+
+    image height fixed
+
+[33mcommit be6bf063a4773edf239be2cd02cfdb93ad383fbc[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 14 23:07:44 2023 +0500
+
+    css fixed
+
+[33mcommit 723e4c1efd33c0b4fb6ef50a42f070f5606240f7[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 14 23:02:22 2023 +0500
+
+    cover image
+
+[33mcommit 21cb94eb46b4760a5263c9101c638962485705c5[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 14 21:53:21 2023 +0500
+
+    handle for missing media
+
+[33mcommit 2a2e6059ea2edd7ab6d686b242f07a14a88aea26[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 14 20:52:49 2023 +0500
+
+    media added
+
+[33mcommit 769fdeb1cda5f667d790d6a85b0cfff6aa0a987e[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 14 19:02:27 2023 +0500
+
+    home top bg-media
+
+[33mcommit f5b74907ef4678ff0bb2e86bc233e66e3a0f4f29[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 14 15:59:50 2023 +0500
+
+    modularized
+
+[33mcommit 8c6e001573267ac412be86ffd742efc0b1474cd9[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 14 02:47:13 2023 +0500
+
+    final page in working
+
+[33mcommit d1823142c07abf044cddf253034db24d139fa043[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Dec 13 18:35:11 2023 +0500
+
+    components fixed
+
+[33mcommit 3116d1e20c64b8df8d60af4f5d5ad11c1c6aa3a9[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 12 03:25:14 2023 +0500
+
+    css fixes
+
+[33mcommit 6a72610643edd0b7c5d73e10ea64b65c6b5f094c[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 12 03:19:15 2023 +0500
+
+    rendering fixed finally
+
+[33mcommit b1deb5738dac5b1653754153d6c636e68183dfa2[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 11 19:56:24 2023 +0500
+
+    hydration issue fixed
+
+[33mcommit 082c90b6aab01e274ba914359430cd3fc467a1cf[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 11 18:58:06 2023 +0500
+
+    single news
+
+[33mcommit 8b01442f5d4150afdab0cd4fcd50ccfd2d31ead3[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sat Dec 9 22:52:06 2023 +0500
+
+    removed uncenssary import
+
+[33mcommit 52f31b9c493d7de9f5f8d9f03afeb5a1634f9a4c[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sat Dec 9 22:32:55 2023 +0500
+
+    markets done
+
+[33mcommit 2bc7b2f982db6e7a65a074969f01993706e05a53[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sat Dec 9 21:45:11 2023 +0500
+
+    fixed navigation
+
+[33mcommit 4a0b48dde2a3182f9f9cfb8af070914d48d0ae30[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sat Dec 9 19:11:21 2023 +0500
+
+    about us complete
+
+[33mcommit 04d24261c52c3b9c5847df8f85d73b4ea7a0dfd1[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Fri Dec 8 14:46:51 2023 +0500
+
+    navbar links static
+
+[33mcommit bfda4305bd19169ea6d0b12e84074bb7de9ff31f[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 7 20:52:35 2023 +0500
+
+    fixes
+
+[33mcommit c6f87bd8145e81ca189402046001a33cb3b8cb53[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Thu Dec 7 19:35:29 2023 +0500
+
+    fixed css
+
+[33mcommit 30049311c56a2c3388e03a13380f6d36700c55c0[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Dec 6 21:44:37 2023 +0500
+
+    cache fixed
+
+[33mcommit f125aefa92849638f9cd1cb6e517b39534d52113[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Dec 6 21:22:54 2023 +0500
+
+    fixing cache
+
+[33mcommit 9de9520ff46be348c1becc1f64660da31d1dbfd7[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Dec 6 20:59:58 2023 +0500
+
+    dynamic slugs
+
+[33mcommit 67f4545bfc905b9132bdd1d66e176f67ec96f364[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Dec 6 13:49:17 2023 +0500
+
+    rendering bug fixed
+
+[33mcommit 477ab77793a4a1944554f58176bbeb12a60890f3[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 5 21:01:18 2023 +0500
+
+    server render error
+
+[33mcommit 845c96d1104caeed6bac011953c4fc1bdb029912[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Tue Dec 5 03:43:38 2023 +0500
+
+    news done
+
+[33mcommit 35ee25bdb8cb9427080c5d3f2c7a429d50c10ea7[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Mon Dec 4 22:12:52 2023 +0500
+
+    service working
+
+[33mcommit 80013d6008f199e43bdb93788d8179520379ae88[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 3 23:55:04 2023 +0500
+
+    Markets|Solutions
+
+[33mcommit 8a4335058e8afa15d71c6f0ac5237295f37f532a[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Sun Dec 3 01:18:22 2023 +0500
+
+    structure
+
+[33mcommit 1c3907820954af9300115fd048647330a5790019[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Nov 29 20:27:36 2023 +0500
+
+    fixed export
+
+[33mcommit 6187f0cdf26db26053541ba198689a05f0879536[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Nov 29 20:26:03 2023 +0500
+
+    removed page
+
+[33mcommit dacfd62f06fce32a3765e45d6b621bc328eb9047[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Nov 29 20:22:11 2023 +0500
+
+    fix
+
+[33mcommit 0f8afd103f33bead16b58596f6cd0c2cc36d7de5[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Nov 29 19:22:17 2023 +0500
+
+    cache fixed
+
+[33mcommit 4de5dcb27aaf4bf2a0d719e4a7dd8162a2d49b97[m
+Author: fahadsalamatrandhawa <dreamtwister61814@gmail.com>
+Date:   Wed Nov 29 16:34:21 2023 +0500
+
+    dynamic storyblok

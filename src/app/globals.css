@@ -1,0 +1,580 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scroll::-webkit-scrollbar { background: transparent; /* make scrollbar transparent */ width: 0px; }
+
+text{
+  font-family: 'Roboto';
+}
+
+div{
+  font-family: 'Roboto';
+}
+
+p{
+  font-family: 'Roboto';
+}
+
+.typed-h {
+  overflow: hidden;
+  animation: typing 3.5s steps(40,end);
+  animation-delay: 2s; /* Add this line */
+}
+
+video{
+  object-fit: cover !important;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-weight: 400;
+  font-size: 21px;
+  scroll-behavior: smooth;
+  color:#221E1F;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+    font-family: 'Roboto';
+  }
+}
+
+/* For screens between 600px and 1200px */
+@media (min-width: 601px) and (max-width: 1400px) {
+  h1 {
+    font-size: 60px;
+    line-height: 64px;
+    font-family: 'Roboto';
+  }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1401px) {
+  h1 {
+    font-size: 80px;
+    line-height: 84px;
+  }
+}
+
+
+h2{
+  font-family: 'Roboto';
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
+/* For screens between 600px and 1200px */
+@media (min-width: 601px) and (max-width: 1200px) {
+  h2 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1201px) {
+  h2 {
+    font-size: 70px;
+    line-height: 77px;
+  }
+}
+
+@media screen and (min-width:1400px) {
+.service-font h3{
+  font-size: 30px !important;
+} 
+}
+
+@media screen and (min-width:1588px) {
+  .service-font h3{
+    font-size: 35px !important;
+  } 
+}
+.service-font h3{
+  width: 100% !important;
+}
+
+.DM_Roboto_H2{
+font-family: Roboto;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+h3{
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  font-family: 'Roboto';
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  h3 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+
+/* For screens between 600px and 1200px */
+@media (min-width: 601px) and (max-width: 1200px) {
+  h3 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1201px) {
+  h3 {
+    font-size: 45px;
+    line-height: 48px;
+  }
+}
+
+h4{
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 33px;
+  font-family: 'Roboto';
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  h4 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
+/* For screens between 600px and 1200px */
+@media (min-width: 601px) and (max-width: 1200px) {
+  h4 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1201px) {
+  h4 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
+
+.Text-16{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: 'Roboto';
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .Text-16 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.Roboto_Text-16{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .Roboto_Text-16 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.Text-18{
+font-family: 'Roboto';
+font-size: 21px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0em;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .Text-18 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.Roboto_Text-18{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .Roboto_Text-18 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+input[type=checkbox] {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.inner-darker{
+  box-shadow: inset 30px 30px 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: 'Roboto';
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+@media (max-width: 1180px) {
+  .dropdown .dropbtn {
+    border-bottom: 1px solid white; /* Add a border bottom */
+    color: white;
+    font-family: 'Roboto';
+    margin: 0; /* Important for vertical align on mobile phones */
+    width: 100%; /* Make the button full width */
+  }
+}
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: inherit;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.indicator {
+  justify-self: end;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: #FBBA0066;
+  margin: 0 0 0 8px;
+}
+
+.indicator.active {
+  background: #FBBA00;
+}
+
+
+@layer components {
+  .animate-upward {
+    animation: marquee 30s linear infinite;
+  }
+  .animate-downward{
+    animation: reverse-marquee 30s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
+  }
+
+  @keyframes reverse-marquee {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+}
+
+
+/* roboto-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto-v30-latin-100.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-100.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/roboto-v30-latin-900.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+
+/*imprint& policypage*/
+
+.normal-page h2{
+  line-height: 120%;
+  padding-top: 1em;
+  font-size: 60px !important;
+}
+.normal-page h3{
+  line-height: 130%;
+  padding-top: 1em;
+}
+.normal-page h1{
+  line-height: 130%;
+}
+.normal-page h4{
+  line-height: 130%;
+  padding-top: 1em;
+}
+
+
+/*aboutsite*/
+@media screen and (min-width: 980px) {
+  .ml{
+    padding-left: 7%;
+  }  
+}
+
+@media screen and (min-width: 1025px) {
+  .ml{
+    padding-left: 9%;
+  }  
+}
+
+@media screen and (min-width: 1066px) {
+  .ml{
+    padding-left: 11%;
+  }  
+}
+@media screen and (min-width: 1066px) {
+  .ml{
+    padding-left: 13%;
+  }  
+}
+@media screen and (min-width: 1149px) {
+  .ml{
+    padding-left: 13%;
+  }  
+}
+
+@media screen and (min-width: 1180px) {
+  .ml{
+    padding-left: 5%;
+  }  
+}
+@media screen and (min-width: 1560px) {
+  .ml{
+    padding-left: 7%;
+  }  
+}
+@media screen and (min-width: 1633px) {
+  .ml{
+    padding-left: 0%;
+  }
+  .mlx{
+    width: 1400px !important;
+    margin: 0 auto;
+    padding-left: 0% !important;
+  }  
+}
+
+@media screen and (min-width: 1420px) {
+  .imgml{
+    width: 400px;
+  }  
+}
+
+/* Anpassungen der Scrollbar für den DialogContent */
+.dialog-content-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Breite der Scrollbar */
+}
+
+.dialog-content-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Farbe des Scrollbar-Tracks */
+}
+
+.dialog-content-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Farbe des Scrollbar-Handles */
+}
+
+.dialog-content-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Farbe des Scrollbar-Handles beim Hover */
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 799px) and (max-width: 888px) {
+  .solutions-header h3 {
+    font-size: 26px !important;
+  }
+  
+}
+
+@media screen and (min-width: 889px) and (max-width: 1088px) {
+  .solutions-header h3 {
+    font-size: 30px !important;
+  }
+  
+}
+
+@media screen and (min-width: 1089px) and (max-width: 1200px) {
+  .solutions-header h3 {
+    font-size: 35px !important;
+  }
+  
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .solutions-header h3 {
+    font-size: 36px !important;
+  }
+  
+}
+@media screen and (min-width: 1401px) and (max-width: 1467px) {
+  .solutions-header h3 {
+    font-size: 37px !important;
+  }
+  
+}
+@media screen and (min-width: 14681px) {
+  .solutions-header h3 {
+    font-size: 39px !important;
+  }
+  
+}
+
+.custom-play-button, .react-player__play-icon {
+  background-image: url('/Icon/Google Play.svg');
+  background-size: cover; /* oder contain, je nach Bedarf */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 70px; /* Anpassen basierend auf deiner Icon-Größe */
+  height: 70px; /* Anpassen basierend auf deiner Icon-Größe */
+  border: none !important;
+  margin: 0 !important;
+}
+
+.react-player__shadow {
+  border: solid #00918e 1px;
+  width: 100px !important;
+  height: 100px !important;
+}

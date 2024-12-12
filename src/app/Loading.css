@@ -1,0 +1,23 @@
+@keyframes zoom-in {
+    0% { transform: translate3d(1); }
+    25% { transform: scale(3); }
+    50% { transform: scale(5); }
+    75% { transform: scale(7); }
+    100% { transform: scale(11); }
+}
+
+.zoom {
+    animation: zoom-in 5s forwards;
+    background-position: center; /* This centers the background image */
+}
+
+
+@keyframes zoom-out {
+    0% { transform: scale(2); }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+
+.zoom-out {
+    animation: zoom-out 2s forwards;
+}
